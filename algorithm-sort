@@ -15,6 +15,7 @@ def selection_sort(arr):
         for j in range(i+1, n):
             if arr[min_idx] > arr[j]:
                 min_idx = j
+        "选择序号,记录最小的idx,然后进行一个交换,排序成功区域逐渐递进"
         arr[i], arr[min_idx] = arr[min_idx], arr[i]
     return arr
 
